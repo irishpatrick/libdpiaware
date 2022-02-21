@@ -16,6 +16,7 @@ elseif (UNIX)
     find_library(XCB_LIBS NAMES libxcb.a REQUIRED)
     find_library(XAU_LIBS NAMES libXau.a REQUIRED)
     find_library(XDMCP_LIBS NAMES libXdmcp.a REQUIRED)
+    find_library(DL_LIBS NAMES libdl.a REQUIRED)
     
     set(dpiaware_incl
         ${CMAKE_CURRENT_SOURCE_DIR}/include
@@ -27,6 +28,7 @@ elseif (UNIX)
         ${XCB_LIBS}   
         ${XAU_LIBS}   
         ${XDMCP_LIBS}   
+	${DL_LIBS}   
     )
 
 endif()
