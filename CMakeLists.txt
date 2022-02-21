@@ -12,7 +12,6 @@ elseif (UNIX)
 
     find_path(X11_INCL NAMES Xlib.h REQUIRED)
     find_library(X11_LIBS NAMES libX11.a REQUIRED)
-    message(STATUS ${X11_INCL})
     
     set(dpiaware_incl
         ${CMAKE_CURRENT_SOURCE_DIR}/include
