@@ -12,6 +12,7 @@ elseif (UNIX)
 
     find_path(X11_INCL NAMES Xlib.h REQUIRED)
     find_library(X11_LIBS NAMES libX11.a REQUIRED)
+    find_library(XCB_LIBS NAMES libxcb.a REQUIRED)
     
     set(dpiaware_incl
         ${CMAKE_CURRENT_SOURCE_DIR}/include
@@ -20,6 +21,7 @@ elseif (UNIX)
 
     set(dpiaware_libs
         ${X11_LIBS}   
+        ${XCB_LIBS}   
     )
 
 endif()
