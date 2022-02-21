@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.2)
 project(dpiaware)
 
 set(sources
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/control.c
     ${CMAKE_CURRENT_SOURCE_DIR}/src/metrics.c
 )
 
