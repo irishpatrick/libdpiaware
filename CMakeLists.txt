@@ -22,8 +22,8 @@ elseif (UNIX)
 
     set(dpiaware_libs
         ${X11_LIBS}   
-        ${XAU_LIBS}   
         ${XCB_LIBS}   
+        ${XAU_LIBS}   
     )
 
 endif()
