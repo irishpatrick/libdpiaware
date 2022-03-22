@@ -7,7 +7,7 @@
 
 #elif defined __linux__
 
-#include <Xlib.h>
+#include <X11/Xlib.h>
 #include <unistd.h>
 
 #endif
