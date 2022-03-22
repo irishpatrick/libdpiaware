@@ -14,13 +14,6 @@ elseif (UNIX)
     find_package(PkgConfig)
 
     pkg_check_modules(X11 REQUIRED x11)
-
-    find_path(X11_INCL NAMES Xlib.h REQUIRED)
-    find_library(X11_LIBS NAMES libX11.a REQUIRED)
-    find_library(XCB_LIBS NAMES libxcb.a REQUIRED)
-    find_library(XAU_LIBS NAMES libXau.a REQUIRED)
-    find_library(XDMCP_LIBS NAMES libXdmcp.a REQUIRED)
-    find_library(DL_LIBS NAMES libdl.a REQUIRED)
     
     set(dpiaware_incl
         ${CMAKE_CURRENT_SOURCE_DIR}/include
