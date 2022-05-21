@@ -2,6 +2,7 @@
 
 #ifdef _WIN32
 
+#include <Windows.h>
 #include <WinUser.h>
 
 #endif

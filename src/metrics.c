@@ -2,6 +2,7 @@
 
 #if defined _WIN32
 
+#include <Windows.h>
 #include <WinUser.h>
 #include <libloaderapi.h>
 
