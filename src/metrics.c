@@ -2,7 +2,7 @@
 
 #if defined _WIN32
 
-#define WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN 1
 #include <Windows.h>
 #include <WinUser.h>
 #include <libloaderapi.h>
@@ -12,7 +12,7 @@
 #include <X11/Xlib.h>
 #include <unistd.h>
 
-#endif
+#endif /* __linux__ */
 
 #define REFERENCE_PIXEL_HEIGHT 1080.0
 
@@ -45,7 +45,7 @@ int dpi_gather_metrics(void)
     resolution_x = scrn->width;
     resolution_y = scrn->height;
 
-#endif
+#endif /* __linux__ */
     
     scale = (double)resolution_y / REFERENCE_PIXEL_HEIGHT;
     if (scale < 1.0)
